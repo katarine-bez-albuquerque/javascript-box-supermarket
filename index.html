@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Supermarket</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <section class="title">
+                <h1><strong>KBA</strong></h1>
+            </section>
+            <nav class="nav">
+                <a target="_blank" href="https://github.com/katarineBAlbuquerque"><strong>Github</strong></a>
+                <a target="_blank" href="https://www.linkedin.com/in/katarine-albuquerque/"><strong>Linkedin</strong></a>
+            </nav>            
+        </header>
+        <section class="content">
+            <aside id="box_01" class="box">
+                <h3>Supermarket</h3>
+                <input id="name" class="box_input" type="text" name="name" placeholder="Name product..."/>
+                <input id="price" class="box_input" type="number" name="price" placeholder="Price product..."/>  
+                <input id="quantity" class="box_input" type="number" name="quantity" placeholder="Quantity product..."/>              
+                <select id="type" class="box_select" name="type">
+                    <option value="">Select...</option>
+                    <option value="bakery">bakery</option>
+                    <option value="cleaning">cleaning</option>
+                    <option value="perfumery">perfumery</option>
+                    <option value="food">food</option>
+                </select>
+                <section class="buttons">
+                    <button id="btn_add" class="btn">Add Products</button>
+                    <button id="btn_clear_list" class="btn">Clear List</button>
+                    <h3>Total : $ <span class="total_value">0.00</span></h3>
+                </section>
+                <section class="total">
+                    <h3 class="total_value"></h3>
+                </section>
+            </aside>
+            <aside id="box_02" class="box">
+                <section class="list">
+                    <h3>Products</h3>
+                    <ul class="items">
+                        <!--
+                        <li class="item"> Quantity - Product - Category - Subtotal </li>
+                        -->
+                    </ul>
+                    <br/>
+                    <h5>@2023</h5>
+                </section>                
+            </aside>
+        </section>
+    </div>
+    <script src="./modules/App.js" type="module"></script>
+</body>
+</html>
